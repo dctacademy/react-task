@@ -4,15 +4,17 @@ Make a small react app for ranking dishes. Multiple users should be able to logi
 
 ## Screens and functionalities needed:
 
-### Login Screen: A user should be able to login into the app using a username and password. Since there is no backend to query you can use a static list of users. Refer to users.json for the static list of users to use
+### Login Screen: 
+A user should be able to login into the app using a username and password. Since there is no backend to query you can use a static list of users. Refer to users.json for the static list of users to use
 
 Once logged in the main app should have 2 tabs (or equivalent).
 
-### Tab 1: Fetch the list of dishes using an API and display the results for the user to vote. Each user then should be able to make a selection of 3 dishes from the poll that has been created. Each selection is given points based on the rank (Rank 1 gets 30 points, Rank 2 gets 20, Rank 3 gets 10). Save the user’s selections for displaying it to him on the next screen for poll results. A user should be able to edit his choices anytime even after submission i.e. if Dish 1 was Rank 1, the user can change it to no Rank or Rank 2, if there is another dish with the same rank the other dish will lose its rank
+### Tab 1: 
+Fetch the list of dishes using an API and display the results for the user to vote. Each user then should be able to make a selection of 3 dishes from the poll that has been created. Each selection is given points based on the rank (Rank 1 gets 30 points, Rank 2 gets 20, Rank 3 gets 10). Save the user’s selections for displaying it to him on the next screen for poll results. A user should be able to edit his choices anytime even after submission i.e. if Dish 1 was Rank 1, the user can change it to no Rank or Rank 2, if there is another dish with the same rank the other dish will lose its rank
 
-URL to fetch dishes json: https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json
+URL to fetch dishes json: https://raw.githubusercontent.com/dctacademy/react-task/main/db.json
 
-```
+```js
 Sample dish object
 {
     "id": 1,
@@ -23,7 +25,7 @@ Sample dish object
 ```
 Tab2: Show the dishes in the descending order of the points received from the polling. The logged in user should also be able to see his selections in this list so that he knows where his selected dishes stand in the rankings.
 
-How will the submission be evaluated?
+## How will the submission be evaluated?
 Functionality: Is the web-app functional and performant?
 Code Quality: Code Readability and structuring.
 Exception Handling: No crashes and proper error messages logged.
